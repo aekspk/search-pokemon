@@ -72,13 +72,13 @@ export default function SearchPokemon() {
         className="border border-gray-300 p-2 px-6 rounded-full w-[360px] md:w-[400px] bg-white text-slate-700"
       />
       {showSearchResult && searchTerm.length > 0 && (
-        <div className="mt-4 absolute w-full z-10 bg-white shadow-md w-fit h-fit rounded-lg">
+        <div className="mt-4 absolute w-full z-10 bg-white shadow-md w-fit h-fit rounded-lg  w-[360px] md:w-[400px]">
           {filteredPokemons.length > 0 ? (
             filteredPokemons.map((pokemon) => (
               <Link
                 href={`/pokemon/${pokemon.id}`}
                 key={pokemon.id}
-                className="text-slate-700 cursor-pointer block p-2 hover:bg-slate-50 w-[400px]"
+                className="text-slate-700 cursor-pointer block p-2 hover:bg-slate-50  w-[360px] md:w-[400px]"
                 onClick={() => handleSelectPokemon(pokemon.name)}
               >
                 <span className="font-base px-2">{pokemon.name}</span>

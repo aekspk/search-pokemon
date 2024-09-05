@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useQuery } from "@apollo/client";
-import "tailwindcss/tailwind.css";
 import { Pokemon } from "@/type";
 import { GetAllPokemon } from "@/pokemonQueries";
 import Link from "next/link";
